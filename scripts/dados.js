@@ -2,7 +2,7 @@ let dados = [
     {
         titulo: "HTML",
         descricao:"HTML, que significa HyperText Markup Language ou Linguagem de Marcação de Hipertexto em português, é a linguagem fundamental utilizada para criar a estrutura das páginas da web. Imagine-a como os ossos de uma casa: ela define onde cada elemento visual de uma página vai estar localizado e como eles se relacionam entre si.",
-        link: "https://www.w3schools.com/html/default.asp",
+        link: "paginas/html.html",
         tags: "Front-end",
         imagem: "Imagens/html-logo.png",
     },

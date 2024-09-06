@@ -5,6 +5,9 @@
 body {
     background-image: url(../Imagens/wallpaper.jpg);
     background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
     background-color: #000000; /* Cor de fundo da página */
     display: flex; /* Usa Flexbox para layout */
@@ -91,11 +94,12 @@ section button {
 /* Estiliza os links quando são passados o mouse sobre */
 .item-resultado a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+    color: blue;
 }
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
-    color: #45474B; /* Cor do texto */
+    color: #6c757d; /* Cor do texto */
     margin: 0.5rem 0; /* Margem acima e abaixo */
 }
 
@@ -113,4 +117,10 @@ footer {
 img{
     width: 100px;
     margin: auto;
-}  
+} 
+button:hover{
+    background-color: darkblue;
+    color: white;
+    transition: all 0.3s;
+    transform: scale(1.1);
+}
