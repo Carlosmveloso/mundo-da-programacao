@@ -4,7 +4,7 @@ function pesquisar(){
     let campoPesquisa = document.getElementById("campo-pesquisa").value
 
     if (!campoPesquisa) {
-        section.innerHTML = "<p>Nada foi encontrado. Você não buscou nada sobre linguagens de progrmação</p>"
+        section.innerHTML = "<p>Nada foi encontrado. Digite alguma linguagem para poder aprender</p>"
         return 
     }
 
@@ -13,8 +13,8 @@ function pesquisar(){
     //Inicializa um String vazia para armazenar os Dados
     let resultados = "";
     let titulo = "";
-    let descricao = "";
     let tags = "";
+    let imagem = "";
     
     //para cada dado dentro da lista de dados
     //Itera sobre cada dado da lista de dados
@@ -23,11 +23,12 @@ function pesquisar(){
         descricao = dado.descricao.toLowerCase()
         tags = dado.tags.toLowerCase()
         //se titulo includes campoPesquisa entao, faça...
-        if(titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tags.includes(campoPesquisa)) {
+        if(titulo.includes(campoPesquisa) || imagem.includes(campoPesquisa)|| tags.includes(campoPesquisa)) {
         //Cria um novo elemento HTML para cada resultado
         resultados += `
         <div class="item-resultado">
                         <h2>${dado.titulo}</h2>
+                        <img src =${dado.imagem} alt="linguagem logo">
                         <p class="descricao-meta">${dado.descricao}</p>
                         <a href="${dado.link}" target="_blank">Aprender mais !</a>
                     </div>
