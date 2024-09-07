@@ -29,7 +29,7 @@ a:hover {
 header {
     display: flex;
     justify-content: center;
-    background-color: #E4552D;
+    background-color: #254BDF;
     position: relative;
     /*background: linear-gradient(90deg, #007BFF 0%, #00BFFF 100%);*/
     color: white;
@@ -80,7 +80,7 @@ header h1 {
     visibility: visible;
 }
 .letra:hover{
-    color: #E4552D;
+    color: #254BDF;
 }
 
 main {
@@ -96,14 +96,14 @@ main h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #333;
-    border-bottom: 3px solid #E4552D;
+    border-bottom: 3px solid #254BDF;
     padding-bottom: 0.5rem;
 }
 
 main h3 {
     font-size: 1.5rem;
     margin-top: 1.5rem;
-    color: #bb4a2b;
+    color: #254BDF;
 }
 
 p {
@@ -124,7 +124,7 @@ ul li, ol li {
 footer {
     text-align: center;
     padding: 1px;
-    background: #E4552D;
+    background: #254BDF;
     color: white;
     position: fixed;
     width: 100%;

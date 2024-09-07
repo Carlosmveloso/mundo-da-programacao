@@ -29,7 +29,7 @@ a:hover {
 header {
     display: flex;
     justify-content: center;
-    background-color: #E4552D;
+    background-color: #CCB029;
     position: relative;
     /*background: linear-gradient(90deg, #007BFF 0%, #00BFFF 100%);*/
     color: white;
@@ -42,45 +42,6 @@ header h1 {
     font-size: 2.5rem;
     display: flex;
     align-items: center;
-}
-
-.intro{
-    font-size: 2.5rem;
-    margin-right: 1rem;
-    color: white;
-}
-
-.letra{
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    transition: color 0.3 ease;
-}
-
-.letra::before{
-    content: attr(data-tooltip);
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform:translateX(-50%);
-    background-color: #333;
-    color: #fff;
-    padding: 0.5rem;
-    border-radius: 5px;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    font-size: 0.875rem;
-    z-index: 10;
-    pointer-events: none;
-}
-.letra:hover::before{
-    opacity: 1;
-    visibility: visible;
-}
-.letra:hover{
-    color: #E4552D;
 }
 
 main {
@@ -96,14 +57,14 @@ main h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #333;
-    border-bottom: 3px solid #E4552D;
+    border-bottom: 3px solid #CCB029;
     padding-bottom: 0.5rem;
 }
 
 main h3 {
     font-size: 1.5rem;
     margin-top: 1.5rem;
-    color: #bb4a2b;
+    color: #CCB029;
 }
 
 p {
@@ -124,7 +85,7 @@ ul li, ol li {
 footer {
     text-align: center;
     padding: 1px;
-    background: #E4552D;
+    background: #CCB029;
     color: white;
     position: fixed;
     width: 100%;

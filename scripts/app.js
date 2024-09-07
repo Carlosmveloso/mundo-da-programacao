@@ -13,7 +13,6 @@ function pesquisar(){
     //Inicializa um String vazia para armazenar os Dados
     let resultados = "";
     let titulo = "";
-    let tags = "";
     let imagem = "";
     
     //para cada dado dentro da lista de dados
@@ -21,9 +20,8 @@ function pesquisar(){
     for (let dado of dados) {
         titulo = dado.titulo.toLowerCase()
         descricao = dado.descricao.toLowerCase()
-        tags = dado.tags.toLowerCase()
         //se titulo includes campoPesquisa entao, faça...
-        if(titulo.includes(campoPesquisa) || imagem.includes(campoPesquisa)|| tags.includes(campoPesquisa)) {
+        if(titulo.includes(campoPesquisa) || imagem.includes(campoPesquisa)) {
         //Cria um novo elemento HTML para cada resultado
         resultados += `
         <div class="item-resultado">
